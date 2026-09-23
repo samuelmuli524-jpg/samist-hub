@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SAMIST HUB provides academic, career and business support services.">
+  <meta name="description" content="SAMIST HUB provides academic support, career growth, business solutions, printing and branding services.">
   <title>SAMIST HUB | Academic &amp; Business Support</title>
+  <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
   <header class="site-header">
     <a class="logo" href="#home" aria-label="SAMIST HUB home">
-      <img src="logo.png" alt="SAMIST HUB Logo">
+      <img src="images/logo.png" alt="SAMIST HUB Logo">
       <h2>SAMIST <span>HUB</span></h2>
     </a>
     <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
       <a href="#services">Services</a>
+      <a href="#why-us">Why Choose Us</a>
       <a href="#order">Order</a>
       <a href="#payment">Payment</a>
       <a href="#contact">Contact</a>
@@ -23,34 +27,71 @@
 
   <main>
     <section id="home" class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Academic &amp; Business Support</p>
-        <h1>Reliable. Professional.<br><em>Tailored to You.</em></h1>
-        <p>Academic, Career and Business Support Services</p>
-        <a class="button" href="https://wa.me/254757728460" target="_blank" rel="noopener">Order on WhatsApp</a>
+      <div class="hero-content">
+        <p class="eyebrow">ACADEMIC &amp; BUSINESS SUPPORT</p>
+        <h1>Empowering Students,<br><span>Professionals &amp; Businesses</span></h1>
+        <p>Academic Support | Career Growth | Business Solutions | Printing &amp; Branding</p>
+        <div class="hero-buttons">
+          <a class="button" href="https://wa.me/254757728460" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Order on WhatsApp</a>
+          <a class="outline-button" href="#order">Request a Quote</a>
+        </div>
       </div>
     </section>
 
+    <section id="why-us" class="features" aria-label="Why choose SAMIST HUB">
+      <div class="feature-box"><i class="fa-solid fa-star" aria-hidden="true"></i><h3>Quality Work</h3><p>Professional services delivered with attention to detail.</p></div>
+      <div class="feature-box"><i class="fa-solid fa-bolt" aria-hidden="true"></i><h3>Fast Delivery</h3><p>Reliable turnaround times for every project.</p></div>
+      <div class="feature-box"><i class="fa-solid fa-user-check" aria-hidden="true"></i><h3>Trusted Support</h3><p>Dedicated assistance tailored to your needs.</p></div>
+      <div class="feature-box"><i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i><h3>Affordable Rates</h3><p>Quality solutions at competitive prices.</p></div>
+    </section>
+
     <section id="services">
-      <h2>Our Services</h2>
+      <div class="section-heading"><p>OUR SERVICES</p><h2>Professional Services for Your Success</h2></div>
       <div class="cards">
+        <!-- Academic Support -->
         <article class="card">
-          <img src="report-writing.png" alt="SAMIST HUB Report Writing Services">
-          <h3>Report Writing</h3>
-          <p>Academic reports, typing, printing, editing and binding.</p>
+          <img src="images/academic-support.png" alt="SAMIST HUB Academic Support Services">
+          <div class="card-content">
+            <h3>Academic Support</h3>
+            <p>Assignments, research proposals, dissertations, presentations, editing and academic guidance.</p>
+            <a href="#order" class="learn-more">Learn More <span aria-hidden="true">&#8594;</span></a>
+          </div>
         </article>
+        <!-- CV Preparation -->
         <article class="card">
-          <img src="cv-preparation.png" alt="SAMIST HUB CV Preparation Services">
-          <h3>CV Preparation</h3>
-          <p>Professional CV writing, career documents and upgrades.</p>
+          <img src="images/cv-preparation.png" alt="SAMIST HUB CV Preparation Services">
+          <div class="card-content">
+            <h3>CV Preparation</h3>
+            <p>Professional CV writing, cover letters, LinkedIn profiles and career documents.</p>
+            <a href="#order" class="learn-more">Learn More <span aria-hidden="true">&#8594;</span></a>
+          </div>
         </article>
+        <!-- Printing -->
         <article class="card">
-          <h3>Printing &amp; Binding</h3>
-          <p>Quality printing and professional finishing.</p>
+          <img src="images/printing.png" alt="SAMIST HUB Printing and Branding Services">
+          <div class="card-content">
+            <h3>Printing &amp; Binding</h3>
+            <p>Quality printing, binding, posters, flyers, brochures and branded materials.</p>
+            <a href="#order" class="learn-more">Learn More <span aria-hidden="true">&#8594;</span></a>
+          </div>
         </article>
+        <!-- Business Support -->
         <article class="card">
-          <h3>Business Support</h3>
-          <p>Business reports and documents.</p>
+          <img src="images/business-support.png" alt="SAMIST HUB Business Support Services">
+          <div class="card-content">
+            <h3>Business Support</h3>
+            <p>Business plans, proposals, reports, data analysis and strategic guidance.</p>
+            <a href="#order" class="learn-more">Learn More <span aria-hidden="true">&#8594;</span></a>
+          </div>
+        </article>
+        <!-- Branded Apparel -->
+        <article class="card">
+          <img src="images/branded-apparel.png" alt="SAMIST HUB Branded Apparel Services">
+          <div class="card-content">
+            <h3>Branded Apparel</h3>
+            <p>Custom jerseys, polo shirts, T-shirts, caps and corporate branding.</p>
+            <a href="#order" class="learn-more">Learn More <span aria-hidden="true">&#8594;</span></a>
+          </div>
         </article>
       </div>
     </section>
@@ -82,7 +123,7 @@
       <p>Pay securely via M-Pesa Buy Goods Till Number:</p>
       <h3>Till Number: 6925052</h3>
       <p>Account Name: SAMUEL NZUMBI MULI</p>
-      <img src="mpesa-qr.png" alt="SAMIST HUB M-Pesa Payment QR" class="payment-qr">
+      <img src="images/mpesa-qr.png" alt="SAMIST HUB M-Pesa Payment QR" class="payment-qr">
       <p>After payment, send your confirmation through WhatsApp.</p>
       <a class="button" href="https://wa.me/254757728460?text=Hello%20SAMIST%20HUB,%20I%20have%20made%20a%20payment%20and%20would%20like%20to%20send%20the%20confirmation" target="_blank" rel="noopener">Send Payment Confirmation</a>
     </section>
@@ -91,10 +132,11 @@
       <h2>Contact SAMIST HUB</h2>
       <p>WhatsApp: <a href="https://wa.me/254757728460">0757 728 460</a></p>
       <div class="social" aria-label="Social media links">
-        <a href="YOUR_FACEBOOK_LINK" aria-label="Facebook">Facebook</a>
-        <a href="YOUR_INSTAGRAM_LINK" aria-label="Instagram">Instagram</a>
-        <a href="YOUR_TIKTOK_LINK" aria-label="TikTok">TikTok</a>
-        <a href="YOUR_LINKEDIN_LINK" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://www.fb.com/l/6lp1kJRRR" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/sami.sthub?stkn=bm84dGVpNXZ6OGdx" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.tiktok.com/@samist.hub" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/samist-hub-64a80b439" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/@SamistHub" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
       </div>
     </section>
   </main>
