@@ -37,6 +37,9 @@ section > h2 { color: var(--navy); margin-bottom: 35px; }
 .card:hover { transform: translateY(-6px); }
 .card img { border-radius: 15px; display: block; height: 250px; margin-bottom: 20px; object-fit: cover; width: 100%; }
 .card h3 { color: var(--navy); margin-bottom: 10px; }
+.card-content { padding: 0 5px 5px; }
+.learn-more { color: var(--navy); display: inline-block; font-weight: 700; margin-top: 18px; }
+.learn-more:hover { color: var(--gold); }
 
 .order-section { background: var(--light); }
 form { display: flex; flex-direction: column; gap: 15px; margin: auto; max-width: 600px; text-align: left; }
@@ -59,8 +62,9 @@ button:hover { background: var(--gold); color: var(--navy); }
 .contact { background: var(--navy); color: var(--white); }
 .contact h2 { color: var(--white); }
 .contact p a, .social a { color: var(--gold); }
-.social { margin-top: 25px; }
-.social a { margin: 10px; }
+.social { display: flex; gap: 15px; justify-content: center; margin-top: 25px; }
+.social a { align-items: center; background: #003366; border-radius: 50%; color: white; display: flex; font-size: 22px; height: 45px; justify-content: center; margin: 0; text-decoration: none; transition: .3s; width: 45px; }
+.social a:hover { background: #D4AF37; color: white; transform: translateY(-5px); }
 footer { background: #041126; color: var(--white); padding: 25px; text-align: center; }
 .whatsapp { align-items: center; background: #25d366; border-radius: 50%; bottom: 25px; color: var(--white); display: flex; font-size: 34px; height: 65px; justify-content: center; position: fixed; right: 25px; width: 65px; }
 .whatsapp:hover { transform: scale(1.08); }
@@ -73,4 +77,118 @@ footer { background: #041126; color: var(--white); padding: 25px; text-align: ce
   .hero h1 { font-size: 35px; }
   section { padding: 55px 8%; }
   .whatsapp { bottom: 18px; right: 18px; }
+}
+
+/* Expanded homepage sections */
+.hero {
+  min-height: 85vh;
+}
+
+.hero-content {
+  margin: auto;
+  max-width: 850px;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero-buttons {
+  align-items: center;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+.hero-buttons .button {
+  margin-top: 20px;
+}
+
+.outline-button {
+  border: 2px solid var(--gold);
+  border-radius: 30px;
+  color: var(--white);
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 13px 28px;
+}
+
+.outline-button:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.features {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 45px 8%;
+}
+
+.feature-box {
+  padding: 15px;
+  text-align: center;
+}
+
+.feature-box i {
+  color: var(--gold);
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.feature-box h3 {
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.feature-box p {
+  font-size: .9rem;
+}
+
+.section-heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-heading > p {
+  color: var(--gold);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.section-heading h2 {
+  margin-bottom: 0;
+}
+
+.card a {
+  color: var(--navy);
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+.card a:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 900px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-buttons {
+    align-items: stretch;
+    flex-direction: column;
+    margin: auto;
+    max-width: 260px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
 }
